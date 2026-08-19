@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ModBot Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0d12;
+            color: white;
+        }
+
+        header {
+            padding: 25px 8%;
+            border-bottom: 1px solid #222631;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 50px 8%;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #151821;
+            border: 1px solid #222631;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        .status {
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        .toggle {
+            margin-top: 20px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            background: #5865f2;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🛡️ ModBot</div>
+
+    <a href="index.html">← Back to Website</a>
+
+</header>
+
+<div class="container">
+
+    <h1>ModBot Dashboard</h1>
+
+    <p class="subtitle">
+        Manage your Discord moderation settings.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>🛡️ AutoMod</h2>
+            <p class="status">● Enabled</p>
+            <button class="toggle">Toggle</button>
+        </div>
+
+        <div class="card">
+            <h2>🚨 Anti-Raid</h2>
+            <p class="status">● Enabled</p>
+            <button class="toggle">Toggle</button>
+        </div>
+
+        <div class="card">
+            <h2>💬 Anti-Spam</h2>
+            <p class="status">● Enabled</p>
+            <button class="toggle">Toggle</button>
+        </div>
+
+        <div class="card">
+            <h2>⚠️ Warnings</h2>
+            <p>0 warnings today</p>
+            <button class="toggle">View Warnings</button>
+        </div>
+
+        <div class="card">
+            <h2>🔨 Moderation</h2>
+            <p>Manage bans, kicks and timeouts.</p>
+            <button class="toggle">Open Moderation</button>
+        </div>
+
+        <div class="card">
+            <h2>📋 Logs</h2>
+            <p>View recent moderation actions.</p>
+            <button class="toggle">View Logs</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
