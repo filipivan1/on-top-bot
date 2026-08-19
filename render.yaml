@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: on-top-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: WEB_HOST
+        value: 0.0.0.0
